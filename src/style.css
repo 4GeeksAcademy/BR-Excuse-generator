@@ -1,8 +1,16 @@
 /* @import "~bootstrap/dist/css/bootstrap.min.css"; */
-body {
-  background-color: #fdfdfd2b;
-  text-align: center;
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 h1 {
