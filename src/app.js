@@ -1,5 +1,3 @@
-// const { Button } = require("bootstrap");
-
 function generateExcuse() {
   let who = ["The dog", "My grandma", "His turtle", "My bird"];
   let action = ["ate", "peed", "crushed", "broke"];
