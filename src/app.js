@@ -1,3 +1,4 @@
+// const { Button } = require("bootstrap");
 
 function generateExcuse() {
   let who = ["The dog", "My grandma", "His turtle", "My bird"];
@@ -18,12 +19,20 @@ function generateExcuse() {
     when[Math.floor(Math.random() * when.length)],
   ];
   let result = answer.join(" ");
-  const excuseElement = document.getElementById("excuse");
-  const generateButton = document.getElementById("generateButton");
-  const reloadButton = document.getElementById("reloadButton");
-  // generateButton.addEventListener("click", function() {
-  reloadButton.classList.remove("hidden");
 
-  // });
-  excuseElement.textContent = result;
+  return result;
 }
+
+const generateButton = document.getElementById("generateButton");
+const excuse = document.getElementById("excuse");
+generateButton.addEventListener("click", function() {
+  excuse.textContent = generateExcuse();
+  const reloadButton = document.getElementById("reloadButton");
+  reloadButton.classList.remove("hidden");
+});
+
+const reloadButton = document.getElementById("reloadButton");
+reloadButton.addEventListener("click", function() {
+  location.reload();
+});
+
